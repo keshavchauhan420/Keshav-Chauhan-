@@ -16,7 +16,7 @@
         body {
             font-family: 'Poppins', sans-serif;
             color: white;
-            background: url('file:///C:/Users/k3658/OneDrive/Desktop/WhatsApp%20Image%202025-01-31%20at%2023.42.04_726991e3.jpg') no-repeat center center fixed;
+            background: url('https://img.freepik.com/free-photo/blur-coffee-cafe-shop-restaurant-with-bokeh-background-xd_1421-472.jpg?ga=GA1.1.1790126581.1738335799&semt=ais_hybrid') no-repeat center center fixed;
             background-size: cover;
             overflow-x: hidden;
             line-height: 1.6;
@@ -158,7 +158,7 @@
             margin: 0 auto;
             background: rgba(255, 255, 255, 0.1);
             padding: 20px;
-            border-radius: 8px;
+            border-radius: 20px;
         }
 
         #reservation form input, #reservation form select {
@@ -170,7 +170,11 @@
             color: white;
             border: 1px solid #ccc;
         }
-
+	.button_div{	
+	display: flex;
+	justify-content: center;
+	
+	}
         #reservation form button {
             padding: 12px 20px;
             background: #28a745;
@@ -221,6 +225,11 @@
 	.food{
 	background-color: rgba(0,0,0,0.6);
 
+	.sub_food{
+	border: 1px solid black;
+	background-color: rgba(0,0,0,0.6);
+
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .menu-items {
@@ -262,17 +271,18 @@
 <div class = "food">
         <h2>Welcome to Delicious Bites</h2>
 </div>
-        <p>Indulge in a world of exquisite flavors and top-notch service.</p>
+	<div class="sub_food">
+        <p>Indulge in a world of exquisite flavors and top-notch service.</p></div>
         <a href="#menu">Explore Our Menu</a>
     </section>
 
     <!-- Image Slider Section -->
     <div class="slider-container">
         <div class="slider" id="slider">
-            <img src="C:\Users\k3658\OneDrive\Pictures\Screenshots\Screenshot 2025-01-31 232852.png" alt="Dish 1">
-            <img src="C:\Users\k3658\OneDrive\Pictures\Screenshots\Screenshot 2025-01-31 233724.png" alt="Dish 2">
-            <img src="C:\Users\k3658\OneDrive\Pictures\Screenshots\Screenshot 2025-01-31 233840.png" alt="Dish 3">
-            <img src="C:\Users\k3658\OneDrive\Pictures\Screenshots\Screenshot 2025-01-31 233925.png" alt="Dish 4">
+            <img src="https://img.freepik.com/free-photo/crispy-french-fries-with-ketchup-mayonnaise_1150-26588.jpg?ga=GA1.1.1790126581.1738335799&semt=ais_hybrid" alt="Dish 1">
+            <img src="https://img.freepik.com/free-photo/side-view-club-sandwich-with-salted-cucumbers-lemon-olives-round-white-plate_176474-3049.jpg?ga=GA1.1.1790126581.1738335799&semt=ais_hybrid" alt="Dish 2">
+            <img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?ga=GA1.1.1790126581.1738335799&semt=ais_hybrid" alt="Dish 3">
+            <img src="https://img.freepik.com/free-photo/delicious-organic-coffee-still-life_23-2151762334.jpg?ga=GA1.1.1790126581.1738335799&semt=ais_hybrid" alt="Dish 4">
         </div>
     </div>
 
@@ -312,7 +322,9 @@
             <input type="date" id="date" name="date" required>
             <input type="time" id="time" name="time" required>
             <input type="number" id="guests" name="guests" placeholder="Number of Guests" required>
-            <button type="submit">Reserve Now</button>
+            <div class=button_div>
+		<button type="submit">Reserve Now</button>
+	    </div>
         </form>
     </section>
 
